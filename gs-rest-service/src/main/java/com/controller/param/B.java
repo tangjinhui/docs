@@ -1,4 +1,4 @@
-package com.controller.name;
+package com.controller.param;
 
 public class B {
 	public static void main(String[] args) {

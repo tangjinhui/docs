@@ -1,10 +1,11 @@
-package com.controller.name;
+package com.controller.param;
 
-import com.aliyun.mariana.restful.protocol.RestfulProtocolVo;
+import java.io.Serializable;
+
 
 import io.swagger.annotations.ApiModelProperty;
 
-public class UserVO implements RestfulProtocolVo{
+public class UserVO implements Serializable{
     /**
      * 
      */

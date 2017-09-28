@@ -1,6 +1,7 @@
 package com.controller;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
@@ -11,6 +12,8 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @ImportResource({ "classpath:applicationContext.xml" })
 public class Application extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer {
+	@Value("${server.port}")
+	private Integer port ;
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
@@ -18,6 +21,6 @@ public class Application extends SpringBootServletInitializer implements Embedde
     @Override
     public void customize(ConfigurableEmbeddedServletContainer container) {
         // TODO Auto-generated method stub
-        container.setPort(6001);
+        container.setPort(port);
     }
 }

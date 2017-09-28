@@ -17,18 +17,34 @@
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
+	<!-- swagger文档的doc -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>18.0</version>
+		</dependency>
+	<dependency>
+    <groupId>org.eclipse.persistence</groupId>
+    <artifactId>javax.persistence</artifactId>
+    <version>2.1.1</version>
+</dependency>
+	
+	<dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-jpa</artifactId>
+    </dependency>
 	<!-- 文档的doc -->
 		<!-- doc -->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.6.1</version>
-<!-- 			<exclusions> -->
-<!-- 				<exclusion> -->
-<!-- 					<groupId>*</groupId> -->
-<!-- 					<artifactId>*</artifactId> -->
-<!-- 				</exclusion> -->
-<!-- 			</exclusions> -->
+			<exclusions>
+				<exclusion>
+					<groupId>*</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -175,11 +191,11 @@
 			</exclusions>
 		</dependency>
 	<!--	mariana-dao  -->
-		<dependency>
-			<groupId>com.aliyun.app</groupId>
-			<artifactId>mariana-dao</artifactId>
-			<version>${mariana-dao-version}</version>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>com.aliyun.app</groupId> -->
+<!-- 			<artifactId>mariana-dao</artifactId> -->
+<!-- 			<version>${mariana-dao-version}</version> -->
+<!-- 		</dependency> -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

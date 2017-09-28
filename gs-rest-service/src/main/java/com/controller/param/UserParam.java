@@ -1,9 +1,9 @@
 package com.controller.param;
 
-import com.aliyun.mariana.restful.protocol.RestfulProtocolVo;
+import java.io.Serializable;
 
 import io.swagger.annotations.ApiParam;
-public class UserParam implements RestfulProtocolVo{
+public class UserParam implements Serializable{
     /**
      * 
      */

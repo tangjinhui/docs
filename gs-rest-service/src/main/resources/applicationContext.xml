@@ -5,6 +5,6 @@
        "
 	default-autowire="byName">
 
-	<import resource="classpath:spring/spring-dao.xml" />
+<!-- 	<import resource="classpath:spring/spring-dao.xml" /> -->
 
 </beans>
