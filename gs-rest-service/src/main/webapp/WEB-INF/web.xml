@@ -4,4 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list><!--指定欢迎页面-->  
+        <welcome-file>index.html</welcome-file>  
+    </welcome-file-list>  
 </web-app>
