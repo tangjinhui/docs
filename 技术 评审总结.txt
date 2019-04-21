@@ -1,0 +1,8 @@
+1.httpClient 修改为不能每次创建。httpSocket 。发送http请求。设置header cookie。sendPostHttp    sendGetHttp
+2.StringBuffer 改StringBuilder   java8改为新的流。
+3.异常处理。
+4.调用接口返回一定要判空处理。不要相信第三方的接口。
+5.工具类中的方法要抛出来异常。
+6.流一定要使用字节流。这个不会改变文本的本身。
+7.重要的info日志需要增加。
+8.使用方法的时候要学会去看看源码。底层的实现逻辑。
